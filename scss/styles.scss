@@ -1,0 +1,171 @@
+//////// Utility Classes
+.xl-text {
+  font-size: 4.688rem; // 75px
+}
+
+.navbar-sticky {
+  background: white;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+///////////////////////////////////
+
+//////// Buttons Classes
+.btn-outline-secondary {
+  color: var(--bs-secondary);
+}
+
+// Hovering style using scss
+.btn-outline-secondary {
+  &:hover {
+    color: white;
+  }
+}
+///////////////////////////////////
+
+//////// Header Classes
+.header .decoration-star {
+  top: 5rem; // 80px
+  left: -12.5rem; // 200px
+  width: 31.25rem; // 500px
+  opacity: 0.7;
+}
+
+.header .decoration-star-2 {
+  top: 5rem; // 80px
+  right: -12.5rem; // 200px
+  width: 31.25rem; // 500px
+  opacity: 0.7;
+}
+///////////////////////////////////
+
+//////// Details Classes
+.details .decoration-star {
+  left: -12.5rem; // 200px
+  width: 31.25rem; // 500px
+}
+
+.details-2 .decoration-star-2 {
+  right: -12.5rem; // 200px
+  width: 31.25rem; // 500px
+}
+///////////////////////////////////
+
+//////// Contact Classes
+.contact .decoration-star {
+  left: -12.5rem; // 200px
+  width: 31.25rem; // 500px
+}
+///////////////////////////////////
+
+//////// To Top Button Classes
+.to-top-btn {
+  position: fixed;
+  z-index: 20;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  opacity: 0;
+  width: 3.25rem; // 52px
+  height: 3.25rem; // 52px
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #44434a;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.to-top-btn {
+  &:hover {
+    background-color: #1d1d21;
+  }
+}
+
+.to-top-btn {
+  img {
+    margin-bottom: 0.25rem;
+    width: 1.125rem; // 18px
+  }
+}
+
+.show--to-top {
+  opacity: 1;
+}
+///////////////////////////////////
+
+//////// Media Queries
+// Tablet Size
+@media (max-width: 992px) {
+  .xl-text {
+    font-size: 3.125rem; // 50px
+  }
+
+  // Navbar Items
+  ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li.nav-item {
+    padding: 0.5rem 0;
+  }
+
+  li a[href='#contact'] {
+    // For Contact Button
+    margin-top: 0 !important;
+  }
+
+  .navbar {
+    .btn-outline-secondary {
+      margin-top: 1.25rem; // 20px
+    }
+  }
+
+  .header {
+    margin-top: 0px !important;
+    text-align: center;
+  }
+
+  .header .decoration-star {
+    left: -6.25rem; // 100px
+    width: 15.625rem; // 250px
+  }
+
+  .header .decoration-star-2 {
+    right: -6.25rem; // 100px
+    width: 15.625rem; // 250px
+  }
+
+  .header .image-container {
+    margin-top: 1.875rem; // 30px
+  }
+
+  .contact .image-container {
+    margin-bottom: 3rem; // 48px
+    text-align: center;
+  }
+
+  .services .col-md-4 {
+    border-bottom: 1px #ccc solid;
+  }
+
+  .details-2 {
+    margin-top: 1.5rem !important;
+  }
+
+  .details-2 .decoration-star-2 {
+    top: 18.75rem; // 300px
+  }
+}
+
+@media (max-width: 768px) {
+  .article--card-middle {
+    margin: 2rem 0;
+  }
+}
+///////////////////////////////////
